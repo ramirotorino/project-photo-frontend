@@ -1,14 +1,23 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem 2rem;
+  width: 100%;
   background-color: #000;
-  color: var(--color-accent);
+  border-bottom: 1px solid #222;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid #222;
+  padding: 1.25rem 0;
+}
+
+/* El contenedor interno ahora está centrado y limitado a 1440px */
+.header__inner {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -16,6 +25,7 @@
   text-decoration: none;
   color: var(--color-accent);
   font-weight: bold;
+  max-width: 100%;
 }
 
 .header__nav {
@@ -36,9 +46,10 @@
 
 /* Responsive */
 @media screen and (max-width: 600px) {
-  .header {
+  .header__inner {
     flex-direction: column;
     align-items: flex-start;
+    max-width: 100%;
   }
 
   .header__nav {

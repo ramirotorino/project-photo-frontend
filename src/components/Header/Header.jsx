@@ -3,17 +3,19 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <a href="/" className="header__logo">
-        📷 Fotógrafo Pro
-      </a>
-      <nav className="header__nav">
-        <a href="/galeria" className="header__link">
-          Galería
+      <div className="page header__inner">
+        <a href="/" className="header__logo">
+          📷 The Manco Fotógrafo
         </a>
-        <a href="/login" className="header__link">
-          Ingresar
-        </a>
-      </nav>
+        <nav className="header__nav">
+          <a href="/galeria" className="header__link">
+            Galería
+          </a>
+          <a href="/login" className="header__link">
+            Acceso Clientes
+          </a>
+        </nav>
+      </div>
     </header>
   );
 }

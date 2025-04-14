@@ -16,6 +16,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.page {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
